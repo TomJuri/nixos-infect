@@ -45,7 +45,6 @@ makeConf() {
   zramSwap.enable = ${zramswap};
   networking.hostName = "$(hostname -s)";
   networking.domain = "$(hostname -d)";
-  services.openssh.enable = true;
   users.users.root.password = "1234";
   networking.firewall = {
     enable = false;
